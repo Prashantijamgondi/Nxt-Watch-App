@@ -1,0 +1,48 @@
+.img-logo {
+  width: 13vw;
+  height: 5vh;
+}
+
+.menu-container {
+  display: none;
+}
+
+.mbl-device-logout-btn {
+  display: none;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .img-logo {
+    width: 21vw;
+    height: 4vh;
+    margin-left: 1px;
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+  }
+
+  .logout-btn {
+    display: none;
+  }
+
+  .mbl-device-logout-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+}

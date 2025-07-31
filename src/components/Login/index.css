@@ -1,0 +1,77 @@
+.input {
+  width: 20vw;
+  height: 4vh;
+  color: #475569;
+  opacity: 0.8;
+  padding: 10px;
+  background-color: none;
+  margin-top: 0.8vh;
+  border: solid;
+  outline: none;
+  border-width: 0.5px;
+}
+
+.input:hover {
+  transform: translateX(1px);
+}
+
+/* 
+.input::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.input:hover::before {
+  left: 100%;
+} */
+
+.label-login {
+  color: #475569;
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+}
+
+.nxt-watch-logo {
+  width: 18vw;
+  height: 6vh;
+  margin-bottom: 2vh;
+}
+
+.btn {
+  background: none;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: 0 0 20px rgba(67, 78, 80, 0.6);
+}
+
+@media screen and (max-width: 576px) {
+  .nxt-watch-logo {
+    width: 25vw;
+    height: 4vh;
+  }
+
+  .input {
+    width: 50vw;
+    height: 4.5vh;
+  }
+
+  .label-login {
+    font-weight: 450;
+  }
+}

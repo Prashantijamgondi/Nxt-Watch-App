@@ -1,0 +1,35 @@
+.link {
+  text-decoration: none;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 3vh;
+}
+
+.thumbnail {
+  width: 30vw;
+  height: 25vh;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+.headValueColor {
+  color: '#ebebeb';
+}
+
+@media screen and (max-width: 576px) {
+  .thumbnail {
+    width: 45vw;
+    height: 22vh;
+  }
+}

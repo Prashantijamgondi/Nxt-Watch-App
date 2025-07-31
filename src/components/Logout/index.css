@@ -1,0 +1,60 @@
+.logout-in-large {
+  display: block;
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: #3b82f6;
+  color: #f1f1f1;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup-box {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.popup-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 2vh 4vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .logout-in-large {
+    display: none;
+  }
+}

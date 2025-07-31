@@ -1,0 +1,20 @@
+.trending-heading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2vw;
+}
+
+.view-expire-container {
+  margin-top: -10px;
+}
+
+.heading-saved {
+  width: 83.5vw;
+}
+
+@media screen and (max-width: 576px) {
+  .heading-saved {
+    width: 100vw;
+  }
+}

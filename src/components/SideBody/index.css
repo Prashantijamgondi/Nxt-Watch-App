@@ -1,0 +1,45 @@
+.link-name {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.icon:hover {
+  width: 24px;
+  height: 24px;
+}
+
+.iconcolor {
+  color: #909090;
+}
+
+.activeIconColor {
+  color: #ff0000;
+}
+
+.white-theme-color {
+  color: #1e293b;
+}
+
+.dark-theme-color {
+  color: #ebebeb;
+}
+
+.link-container {
+  color: #1e293b;
+}
+
+.sidebar-container {
+  display: block;
+  padding-left: 1.5vw;
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar-container {
+    display: none;
+  }
+}

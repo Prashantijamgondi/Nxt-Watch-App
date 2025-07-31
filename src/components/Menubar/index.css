@@ -1,0 +1,49 @@
+.menu-container {
+  position: relative;
+}
+
+.hamburger {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: white;
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 9999;
+  animation: slideIn 0.3s ease-out;
+}
+
+.menu-list li {
+  list-style-type: none;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-list li:hover {
+  background-color: #f1f5f9;
+  font-size: 18px;
+}
+
+.link-name {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
