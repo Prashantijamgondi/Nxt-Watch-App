@@ -154,8 +154,12 @@ class VideoItemsDetails extends Component {
   getSaveVideo = () => (
     <NxtwatchContext.Consumer>
       {value => {
-        const {saveVideo, deleteVideo, savedVideosList, activeLanguageLight} =
-          value
+        const {
+          saveVideo,
+          deleteVideo,
+          savedVideosList,
+          activeLanguageLight,
+        } = value
         const {videoDetail} = this.state
         const iconColor = activeLanguageLight ? '#616e7c' : '#94a3b8'
 
@@ -188,12 +192,10 @@ class VideoItemsDetails extends Component {
   getVideosDetailsStatus = () => {
     const {videoDetail} = this.state
     const {publishedAt} = videoDetail
+
     const getVideoIdFromUrl = url => {
-      const parts = url.split('v=')
-      if (parts.length > 1) {
-        return parts[1].split('&')[0]
-      }
-      return ''
+      const urlObj = new URL(url)
+      return urlObj.searchParams.get('v') || urlObj.pathname.split('/').pop()
     }
 
     const stripPrefix = text => {
