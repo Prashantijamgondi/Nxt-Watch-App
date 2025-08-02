@@ -8,8 +8,14 @@ const VideoCard = props => (
   <NxtwatchContext.Consumer>
     {value => {
       const {eachVideoItem} = props
-      const {title, thumbnailUrl, viewCount, publishedAt, channel, id} =
-        eachVideoItem
+      const {
+        title,
+        thumbnailUrl,
+        viewCount,
+        publishedAt,
+        channel,
+        id,
+      } = eachVideoItem
       const {name} = channel
 
       const stripPrefix = text => {

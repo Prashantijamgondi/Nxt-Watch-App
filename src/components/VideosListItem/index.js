@@ -8,8 +8,14 @@ import './index.css'
 
 const VideosListItem = props => {
   const {eachVideoItem} = props
-  const {title, thumbnailUrl, viewCount, publishedAt, channel, id} =
-    eachVideoItem
+  const {
+    title,
+    thumbnailUrl,
+    viewCount,
+    publishedAt,
+    channel,
+    id,
+  } = eachVideoItem
   const {name, profileImageUrl} = channel
 
   const stripPrefix = text => {

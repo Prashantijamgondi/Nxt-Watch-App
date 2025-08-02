@@ -71,7 +71,7 @@ class Trending extends Component {
           : '#0f0f0f'
         const roundBackcolor = activeLanguageLight ? '#d7dfe9' : '#000000'
         const trendingHeading = activeLanguageLight ? '#1e293b' : '#f9f9f9'
-  
+
         return (
           <div
             style={{
